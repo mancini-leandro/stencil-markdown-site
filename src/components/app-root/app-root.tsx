@@ -33,8 +33,8 @@ export class AppRoot {
 
                             <stencil-route 
                                 url="/docs/:pageName"
-                                routeRender={() => (
-                                    <my-component></my-component>
+                                routeRender={(route) => (
+                                    <doc-component page={route!.match.url}></doc-component>
                                 )}
                             />
                         </stencil-route-switch>
