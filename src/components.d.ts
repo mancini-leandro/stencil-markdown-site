@@ -6,6 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AppRoot {
+    }
+    interface LandingPage {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +26,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
+    }
+    var HTMLAppRootElement: {
+        prototype: HTMLAppRootElement;
+        new (): HTMLAppRootElement;
+    };
+    interface HTMLLandingPageElement extends Components.LandingPage, HTMLStencilElement {
+    }
+    var HTMLLandingPageElement: {
+        prototype: HTMLLandingPageElement;
+        new (): HTMLLandingPageElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +45,16 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "app-root": HTMLAppRootElement;
+        "landing-page": HTMLLandingPageElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface AppRoot {
+    }
+    interface LandingPage {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +70,8 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "app-root": AppRoot;
+        "landing-page": LandingPage;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +79,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "landing-page": LocalJSX.LandingPage & JSXBase.HTMLAttributes<HTMLLandingPageElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

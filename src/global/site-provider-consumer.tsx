@@ -10,5 +10,10 @@ export default createProviderConsumer<SiteState>({
     isLeftSidebarIn: false,
     toggleLeftSidebar: () => {}
   },
-  (subscribe, child) => <context-consumer subscribe={subscribe} renderer={child} />
+  (subscribe, child) => {
+    console.log(child)
+    console.log(subscribe)
+
+    return <context-consumer subscribe={subscribe} renderer={child} />;
+  }
 );
