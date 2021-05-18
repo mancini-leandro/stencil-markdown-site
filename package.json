@@ -19,7 +19,9 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "site.structure": "tsc --p ./scripts && node ./scripts/site-structure",
+    "docs": "tsc --p ./scripts && node ./scripts/markdown-to-html"
   },
   "dependencies": {
     "@stencil/core": "^2.0.1",

@@ -1,0 +1,54 @@
+[
+  {
+    "text": "Introduction",
+    "children": [
+      {
+        "text": "Why Stencil",
+        "filePath": "/assets/docs/introduction/why-stencil.json",
+        "url": null
+      },
+      {
+        "text": "Goals and Objectives",
+        "filePath": "/assets/docs/introduction/goals-and-objectives.json",
+        "url": null
+      },
+      {
+        "text": "Browser Support",
+        "filePath": "/assets/docs/introduction/browser-support.json",
+        "url": null
+      },
+      {
+        "text": "Getting Started",
+        "filePath": "/assets/docs/introduction/getting-started.json",
+        "url": "/docs/getting-started"
+      },
+      {
+        "text": "My First Component",
+        "filePath": "/assets/docs/introduction/my-first-component.json",
+        "url": null
+      },
+      {
+        "text": "FAQ",
+        "filePath": "/assets/docs/introduction/faq.json",
+        "url": null
+      }
+    ]
+  },
+  {
+    "text": "External Links",
+    "children": [
+      {
+        "text": "Stencil on GitHub",
+        "filePath": "https://github.com/ionic-team/stencil"
+      },
+      {
+        "text": "Stencil on Slack",
+        "filePath": "https://stencil-worldwide.herokuapp.com/"
+      },
+      {
+        "text": "Stencil on Twitter",
+        "filePath": "https://twitter.com/stenciljs"
+      }
+    ]
+  }
+]
