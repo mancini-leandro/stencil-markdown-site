@@ -110,6 +110,8 @@ const toHypertext = (data: any) => {
             }
         }
         args.push(arg);
+
+        console.log(args);
     }
 
     return (h as any).apply(null, args);

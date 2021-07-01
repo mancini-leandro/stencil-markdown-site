@@ -27,6 +27,8 @@ you will be provided with a prompt so that you can choose the type of project to
    component     Collection of web components that can be used anywhere
 ```
 
+<app-button>Teste</app-button>
+
 
 ## Updating Stencil
 
